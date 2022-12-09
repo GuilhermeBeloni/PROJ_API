@@ -3,6 +3,7 @@ from fastapi.security.api_key import APIKeyHeader
 from pydantic import BaseModel, Field
 from typing import Optional
 
+
 API_KEY = '123asd'
 API_KEY_HEADER = 'AUTHORIZATION'
 api_key_header_auth = APIKeyHeader(name=API_KEY_HEADER, auto_error=True)
@@ -110,4 +111,5 @@ def atualizar_cliente(id: int, cliente: Cliente):
 
 
 '''uvicorn main:app --reload'''
+'''https://xqfrxs.deta.dev/docs'''
 
